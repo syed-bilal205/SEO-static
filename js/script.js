@@ -10,6 +10,12 @@ const themeButton = document.querySelector("#theme-btn");
 
 themeButton.addEventListener("click", () => {
   themeButton.classList.toggle("fa-sun");
+
+  if (themeButton.classList.contains("fa-sun")) {
+    document.body.classList.add("active");
+  } else {
+    document.body.classList.remove("active");
+  }
 });
 
 // themeButton.onclick = () => {

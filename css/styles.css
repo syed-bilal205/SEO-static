@@ -15,6 +15,16 @@
   border: none;
   outline: none;
 }
+body {
+  background: var(--white);
+}
+
+body.active {
+  --black: #fff;
+  --white: #111;
+  --light-color: #aaa;
+  --light-bg: #222;
+}
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
